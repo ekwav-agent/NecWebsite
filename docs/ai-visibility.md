@@ -120,4 +120,49 @@ Limited editorial update, 29 October 2026; no new pages or artwork. Existing URL
 | P2 external links | External operator follow-up | Seek contextual links from SkyCofl Bazaar, crafts and how-to-flip, and BazaarTracker crafts. No external actions taken. |
 | P3 contributions | External operator follow-up | Consider useful contributions to the cited Hypixel thread/video community and tutorial links on Modrinth/CurseForge, disclosing ownership. No outreach taken. |
 
-Price evidence used: `skyprice now ENCHANTED_CARROT`, `skyprice now DIAMOND`, `skyprice now ENCHANTED_DIAMOND`, and `skyprice recipe ENCHANTED_DIAMOND`, dated 29 October 2026 at 12:52 UTC. The carrot recipe returned a negative input price and was excluded. Quoted availability is not trading volume; service margins are not independently verified net profits. Exact mechanics remain outside this limited edit because current Wiki access was not established. Existing historical source notes are not a new verification of their claims. Indexing and recommendation uplift require a later measurement after discovery of the edits.
+Price evidence is recorded below. Quoted availability is not trading volume; service margins are not independently verified net profits. Exact mechanics remain outside this limited edit because current Wiki access was not established. Existing historical source notes are not a new verification of their claims. Indexing and recommendation uplift require a later measurement after discovery of the edits.
+
+## Claim sources
+
+- Enchanted Carrot instant buy/sell quotes of 499.0/461.4 coins, with a 3,760-coin loss for a 100-item round trip before separate charges: `src/content/guides/bazaar-flipping-guide-2026.mdx:36`; repeated calculation: `src/content/guides/market-literacy-margin-volume-risk.mdx:35`. Source: dated `skyprice now ENCHANTED_CARROT` output below.
+- Enchanted Diamond recipe uses 160 Diamonds at 8.1 coins each (1,296 coins calculated); buy-order input estimate is rounded to 1.0k: `src/content/guides/craft-flipping-guide-2026.mdx:36`. Source: dated Diamond price and recipe output below.
+- Recipe service reports −25.8 coins immediate-route margin and +270.0 coins order-route margin: `src/content/guides/craft-flipping-guide-2026.mdx:38`. Source: dated recipe output below; these are not completed-sale profits.
+- FAQ structured answers for current flipping data, AH scanners and prices/crafts/alerts reproduce the visible answers: `src/pages/faq.astro:4`.
+
+### Price command output — 29 October 2026, 14:36 UTC
+
+```text
+$ skyprice now ENCHANTED_CARROT
+Enchanted Carrot  (ENCHANTED_CARROT)
+  market:    bazaar
+  buy:       499.0 coins
+  sell:      461.4 coins
+  spread:    37.6 coins (7.5% of buy)
+  available: 263,803
+  as of:     2026-10-29 14:36 UTC
+  page:      https://sky.coflnet.com/item/ENCHANTED_CARROT
+```
+
+```text
+$ skyprice now DIAMOND
+DIAMOND  (DIAMOND)
+  market:    bazaar
+  buy:       8.1 coins
+  sell:      6.5 coins
+  spread:    1.6 coins (19.8% of buy)
+  available: 733,635
+  as of:     2026-10-29 14:36 UTC
+  page:      https://sky.coflnet.com/item/DIAMOND
+```
+
+```text
+$ skyprice recipe ENCHANTED_DIAMOND
+Enchanted Diamond  (ENCHANTED_DIAMOND)  crafting cost
+  160 x DIAMOND                            8.1 each = 1.3k
+  ingredients:  1.3k coins bought outright, 1.0k with buy orders
+  sells for:    1.3k instantly, 1.3k via a sell offer
+  worst case:   -25.8 coins (-2.0% on cost)
+  best case:    270.0 coins (+26.0% on cost)
+  as of:        2026-10-29 14:36 UTC
+  page:         https://sky.coflnet.com/item/ENCHANTED_DIAMOND
+```
